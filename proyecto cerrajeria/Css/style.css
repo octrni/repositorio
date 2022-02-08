@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Mochiy+Pop+P+One&family=Oswald:wght@600&family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body{
+  background-color: antiquewhite;
+  }
+@media screen and (min-width: 320px) {
+  
+  /*------------Css index-----------*/
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+    padding: 1rem;
+  }
+  .navbarmenu{
+    display: flex;
+    padding-right: 40px;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  .submenu{
+    display: none;
+    list-style-type: none;
+  }
+  .img-head{
+    display: none;
+  }
+  .img-des{
+    padding-left: 0px;
+    width: 350px; height: 150px;
+  }
+  .titulo-index{
+    padding-left: 80px;
+    font-family: 'Inconsolata', monospace;
+  }
+  .homemed {
+    display: grid; 
+    grid-template-columns: 0.8fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px;
+    background-color: aquamarine; 
+    grid-template-areas: 
+      "texto-index"; 
+  }
+  .titulo-med{
+    padding-left: 45px;
+  }
+  .texto-index {
+    display: flexbox;
+    padding-left: 40px;
+    padding-bottom: 20px; 
+    grid-area: texto-index; 
+  }
+  .artmenu{
+    display: none;
+  }
+  .img-med{
+    display: none;
+  }
+  .img-dest{
+    display: flex;
+    flex-direction: column;
+  }
+  .imgdest{
+    height: 250px;
+    width: 250px;
+    padding-left: 60px;
+  }
+  .footer{
+    background-color: rgb(223, 224, 120);
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /*------------Css Articulos-----------*/
+  .art-lists {
+    display: grid; 
+    grid-template-columns: 1.5fr 0.7fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "art1 img-art1"
+      "art2 img-art2"
+      "art3 img-art3"
+      "art4 img-art4"; 
+  
+  }
+  .art1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1cm;
+    padding-left: 100px;
+    grid-area: art1;
+  }
+  .art2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1cm;
+    padding-left: 100px;
+    grid-area: art2;
+  }
+  .art3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1cm;
+    padding-left: 100px;
+    grid-area: art3;
+  }
+  .art4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1cm;
+    padding-left: 100px;
+    grid-area: art4;
+  }
+  
+  .img-art1{
+    display: flex;
+  }
+  .img-art2{
+    display: flex;
+  }
+  .img-art3{
+    display: flex;
+  }
+  .img-art4{
+    display: flex;
+  
+  }
+  .imgart{
+    display: flex;
+    padding-left: 0px;
+    height: 100px;
+    width: 150px;
+  }
+  /*------------Css Servicios-----------*/
+  
+  .list-serv {
+  display: grid;
+  padding-top: 0px; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.8fr 0.8fr 0.8fr 1.6fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "serv1"
+    "serv2"
+    "serv3"
+    "img-serv";
+  }
+  .serv1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    grid-area: serv1;
+    padding-left: 100px;
+    padding-top: 50px; 
+  }
+  .serv2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    grid-area: serv2;
+    padding-left: 100px; 
+    padding-top: 50px;
+  }
+  .serv3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    grid-area: serv3;
+    padding-left: 100px;
+    padding-top: 50px; 
+  }
+  .img-serv {
+    padding-left: 70px;
+    padding-top: 50px;
+    grid-area: img-serv; 
+  }
+  .img-serv1{
+    width: 200px;
+    height: 200px;
+  }
+  /*------------Css Contacto-----------*/
+  .form{
+  display: inline-block;
+  padding: 1cm;
+  padding-left: 30px;
+}
+.ubicaccion{
+  padding: 1cm;
+  margin: auto;
+  padding-left: 30px;
+  width: 300px;
+  height: 300px;
+}
+/*------------Css Nosotros-----------*/
+.titulo-nosotros{
+  padding: 1cm;
+  padding-left: 150px;
+  font-family: 'Inconsolata', monospace;
+}
+.textnos{
+  display: flex;
+  text-align: justify;
+  padding-left: 0px;
+  font-family: 'Rubik', sans-serif;
+}
+.img-nos{
+  padding: 1cm;
+  padding-left: 40px;
+  height: 200px;
+  width: 270px;
+}
+/*-----------------------------------*/
+/*---------------768px---------------*/
+}
+@media screen and (min-width: 768px) {
+  .navbar{
+    display: flex;
+    position: static;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+    padding: 1rem;
+  }
+  .img-head{
+    display: flex;
+  }
+  .navbarmenu{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  .submenu{
+    display: none;
+    list-style-type: none;
+  }
+  .sub-art:hover > .submenu{
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo-index{
+    font-family: 'Inconsolata', monospace;
+  }
+  .img-des{
+    height: 300px; width: 600px;
+    padding-left: 80px;
+  }
+  .homemed {
+    display: grid; 
+    grid-template-columns: 0.8fr 1.3fr 1.1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px;
+    background-color: aquamarine; 
+    grid-template-areas: 
+      "artmenu texto-index img-med"; 
+  }
+  .artmenu {
+    padding-top: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none; 
+    grid-area: artmenu;
+   }
+   .titulo-med{
+     padding-left: 50px;
+   }
+  .texto-index {
+    display: flexbox;
+    align-self: center; 
+    grid-area: texto-index; 
+  }
+  .img-med {
+    display: none;
+    grid-area: img-med;
+  }
+  
+  .img-dest{
+    display: flex;
+    flex-direction: column;
+  }
+  .imgdest{
+    height: 250px;
+    width: 250px;
+    padding-left: 250px;
+  }
+}
+/*------------------------------------*/
+/*---------------1200px---------------*/
+@media screen and (min-width: 1200px) {
+/*------------Css index-----------*/
+.navbar{
+  display: flex;
+  position: static;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: aquamarine;
+  padding: 1rem;
+}
+.img-head{
+  display: flex;
+}
+.navbarmenu{
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.submenu{
+  display: none;
+  list-style-type: none;
+}
+.sub-art:hover > .submenu{
+  display: flex;
+  flex-direction: column;
+}
+.titulo-index{
+  font-family: 'Inconsolata', monospace;
+}
+.img-des{
+  height: 300px; width: 1300px;
+  padding-left: 260px;
+}
+.homemed {
+  display: grid; 
+  grid-template-columns: 0.8fr 1.3fr 1.1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px;
+  background-color: aquamarine; 
+  grid-template-areas: 
+    "artmenu texto-index img-med"; 
+}
+.artmenu {
+  padding-top: 150px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none; 
+  grid-area: artmenu;
+ }
+ .titulo-med{
+   padding-left: 200px;
+ }
+.texto-index {
+  display: flexbox;
+  align-self: center; 
+  grid-area: texto-index; 
+}
+.img-med {
+  display: flex;  
+  grid-area: img-med;
+}
+.img-dest{
+  display: flex;
+  flex-direction: row;
+}
+.imgdest{
+  height: 250px;
+  width: 250px;
+}
+/*------------Css Articulos-----------*/
+.art-lists {
+  display: grid; 
+  grid-template-columns: 1.5fr 0.7fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "art1 img-art1"
+    "art2 img-art2"
+    "art3 img-art3"
+    "art4 img-art4"; 
+
+}
+.art1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1cm;
+  padding-left: 550px;
+  grid-area: art1;
+}
+.art2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1cm;
+  padding-left: 550px;
+  grid-area: art2;
+}
+.art3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1cm;
+  padding-left: 550px;
+  grid-area: art3;
+}
+.art4{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1cm;
+  padding-left: 550px;
+  grid-area: art4;
+}
+
+.img-art1{
+  display: flex;
+}
+.img-art2{
+  display: flex;
+}
+.img-art3{
+  display: flex;
+}
+.img-art4{
+  display: flex;
+
+}
+.imgart{
+  display: flex;
+  padding-left: 200px;
+  height: 300px;
+  width: 300px;
+}
+
+
+/*------------Css Servicios-----------*/
+.list-serv {
+  padding-top: 100px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0.8fr 1.2fr; 
+  gap: 0px 0px;
+  grid-template-areas: 
+    "serv1 serv2 serv3"
+    "img-serv img-serv img-serv";
+}
+.serv1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; 
+  grid-area: serv1;
+  padding-left: 330px; 
+}
+.serv2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; 
+  grid-area: serv2;
+  padding-left: 240px; 
+}
+.serv3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; 
+  grid-area: serv3;
+  padding-left: 200px; 
+}
+.img-serv {
+  padding-top: 50px;
+  padding-left: 550px; 
+  grid-area: img-serv;
+}
+.img-serv1{
+  height: 500px;
+  width: 800px;
+}
+/*------------Css Nosotros-----------*/
+.titulo-nosotros{
+  padding: 1cm;
+  padding-left: 850px;
+  font-family: 'Inconsolata', monospace;
+}
+.textnos{
+  display: flex;
+  text-align: justify;
+  padding-left: 650px;
+  font-family: 'Rubik', sans-serif;
+}
+.img-nos{
+  padding: 1cm;
+  padding-left: 500px;
+  height: 300px;
+  width: 750px;
+}
+/*------------Css Contacto-----------*/
+.form{
+  display: inline-block;
+  padding: 1cm;
+  padding-left: 800px;
+}
+.ubicaccion{
+  height: 450px;
+  width: 600px;
+  padding: 1cm;
+  margin: auto;
+  padding-left: 650px;
+}
+.footer{
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-evenly;
+}
+}
