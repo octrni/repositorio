@@ -1,46 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Mochiy+Pop+P+One&family=Oswald:wght@600&family=Roboto+Condensed:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 body{
-  background-color: antiquewhite;
+  background-image: linear-gradient(163deg, #8b8b8b, #614110);
+  padding: 0;
+  margin: 0;
   }
 @media screen and (min-width: 320px) {
+  .navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    position: static;
+    width: 100%;
+    height: 40px;
+    z-index: 1;
+    background-image: linear-gradient(163deg, #706872, #e8e7e9);
+  }
+  .navbarmenu {
+    padding-bottom: 100px;
+    padding-right: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50%;
+    max-width: 1200px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30;
+    list-style-type: none;
+  }
   
   /*------------Css index-----------*/
-  .navbar{
-    display: flex;
-    flex-direction: column;
-    position: static;
-    justify-content: space-evenly;
-    background-color: aquamarine;
-    padding: 1rem;
-  }
-  .navbarmenu{
-    display: flex;
-    padding-right: 40px;
-    justify-content: space-evenly;
-    list-style-type: none;
-  }
-  .submenu{
-    display: none;
-    list-style-type: none;
-  }
-  .img-head{
-    display: none;
-  }
-  .img-des{
-    padding-left: 0px;
-    width: 350px; height: 150px;
-  }
-  .titulo-index{
-    padding-left: 80px;
-    font-family: 'Inconsolata', monospace;
-  }
   .homemed {
     display: grid; 
     grid-template-columns: 0.8fr; 
     grid-template-rows: 1fr; 
     gap: 0px 0px;
-    background-color: aquamarine; 
+    background-image: linear-gradient(163deg, #706872, #e8e7e9);
     grid-template-areas: 
       "texto-index"; 
   }
@@ -63,15 +59,42 @@ body{
     display: flex;
     flex-direction: column;
   }
+  .img-des{
+    padding-left: 10px;
+    width: 350px; height: 150px;
+  }
   .imgdest{
     height: 250px;
     width: 250px;
     padding-left: 60px;
   }
+  .txtimg{
+    display: none;
+  }
   .footer{
-    background-color: rgb(223, 224, 120);
+    background-image: linear-gradient(163deg, #706872, #e8e7e9);
     display: flex;
     justify-content: space-evenly;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter{
+    background-color: aqua;
+    color: aliceblue;
+  }
+  .fa-instagram{
+    background-color: rgb(241, 238, 30);
+    color: brown;
   }
   /*------------Css Articulos-----------*/
   .art-lists {
@@ -220,32 +243,28 @@ body{
 /*---------------768px---------------*/
 }
 @media screen and (min-width: 768px) {
-  .navbar{
+  .navbar {
     display: flex;
+    padding-right: 0px;
+    flex-flow: row nowrap;
+    justify-content: space-around;
     position: static;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: aquamarine;
-    padding: 1rem;
+    width: 100%;
+    height: 40px;
+    z-index: 1;
+    background-image: linear-gradient(163deg, #706872, #e8e7e9);
   }
-  .img-head{
+  .navbarmenu {
+    padding-bottom: 100px;
     display: flex;
-  }
-  .navbarmenu{
-    display: flex;
-    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    width: 50%;
+    max-width: 1200px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30;
     list-style-type: none;
-  }
-  .submenu{
-    display: none;
-    list-style-type: none;
-  }
-  .sub-art:hover > .submenu{
-    display: flex;
-    flex-direction: column;
-  }
-  .titulo-index{
-    font-family: 'Inconsolata', monospace;
   }
   .img-des{
     height: 300px; width: 600px;
@@ -256,7 +275,7 @@ body{
     grid-template-columns: 0.8fr 1.3fr 1.1fr; 
     grid-template-rows: 1fr; 
     gap: 0px 0px;
-    background-color: aquamarine; 
+    background-image: linear-gradient(163deg, #706872, #e8e7e9);
     grid-template-areas: 
       "artmenu texto-index img-med"; 
   }
@@ -280,7 +299,10 @@ body{
     display: none;
     grid-area: img-med;
   }
-  
+  .txtimg{
+    display: none;
+  }
+  /*
   .img-dest{
     display: flex;
     flex-direction: column;
@@ -289,63 +311,82 @@ body{
     height: 250px;
     width: 250px;
     padding-left: 250px;
-  }
+  }*/
 }
 /*------------------------------------*/
 /*---------------1200px---------------*/
 @media screen and (min-width: 1200px) {
 /*------------Css index-----------*/
-.navbar{
-  display: flex;
-  position: static;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background-color: aquamarine;
-  padding: 1rem;
+
+.navbar {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	position: static;
+	width: 100%;
+	height: 40px;
+	z-index: 1;
+  background-image: linear-gradient(163deg, #706872, #e8e7e9);
 }
-.img-head{
-  display: flex;
-}
-.navbarmenu{
-  display: flex;
-  justify-content: space-evenly;
+.navbarmenu {
+	display: flex;
+	flex-flow: row nowrap;
+  padding-bottom: 100px;
+  padding-right: 0px;
+	width: 50%;
+	max-width: 1200px;
+	justify-content: space-around;
+	align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 30;
   list-style-type: none;
 }
-.submenu{
-  display: none;
-  list-style-type: none;
-}
-.sub-art:hover > .submenu{
-  display: flex;
-  flex-direction: column;
-}
-.titulo-index{
-  font-family: 'Inconsolata', monospace;
-}
+
 .img-des{
   height: 300px; width: 1300px;
   padding-left: 260px;
+  padding-top: 25px;
 }
+
 .homemed {
   display: grid; 
   grid-template-columns: 0.8fr 1.3fr 1.1fr; 
   grid-template-rows: 1fr; 
-  gap: 0px 0px;
-  background-color: aquamarine; 
+  background-image: linear-gradient(163deg, #706872, #e8e7e9);
   grid-template-areas: 
     "artmenu texto-index img-med"; 
 }
 .artmenu {
-  padding-top: 150px;
+  padding-top: 30px;
   padding-left: 50px;
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
   list-style-type: none; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   grid-area: artmenu;
  }
+ @keyframes titmed {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
  .titulo-med{
-   padding-left: 200px;
+  width: 100px;
+  height: 100px;
+  padding-left: 200px;
+  position: relative;
+  background-color: rgba(8, 8, 8, 0);
  }
+ .titulo-med:hover{
+  animation-name: titmed;
+  animation-iteration-count: infinite;
+  animation-duration: 4s; 
+ }
+ 
 .texto-index {
   display: flexbox;
   align-self: center; 
@@ -359,10 +400,38 @@ body{
   display: flex;
   flex-direction: row;
 }
-.imgdest{
-  height: 250px;
-  width: 250px;
-}
+
+.content_img{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 100px;
+ }
+ .txtimg{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: white;
+  margin-bottom: 70px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+ }
+ .content_img:hover{
+  cursor: pointer;
+ }
+ .content_img:hover div{
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+ } 
+ 
 /*------------Css Articulos-----------*/
 .art-lists {
   display: grid; 
@@ -503,8 +572,28 @@ body{
   padding-left: 650px;
 }
 .footer{
-  background-color: aquamarine;
+  background-image: linear-gradient(163deg, #706872, #e8e7e9);
   display: flex;
   justify-content: space-evenly;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter{
+  background-color: aqua;
+  color: aliceblue;
+}
+.fa-instagram{
+  background-color: rgb(241, 238, 30);
+  color: brown;
 }
 }
